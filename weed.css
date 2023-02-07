@@ -1,0 +1,65 @@
+body{
+	background-color:#d9f5cd;
+  	width:65%;
+  	margin-left: auto;
+  	margin-right: auto;
+  	text-align: center;
+}
+header{
+	display: inline;
+  	align-items: center;
+  	
+	/*background-image: url(25829.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;*/
+}
+.banner{
+	width: 100%;
+	height: 300px;
+	border-radius: 20px;
+	/*left: 0;
+	right: 0;*/
+}
+.basicGreen{
+	background-color:#94ba84;
+	color:#cae9bd;
+	display: inline-block;
+	text-decoration: none;
+	padding: 20px;
+	text-align: left;
+	border-radius: 20px;
+	font-size: 45px;
+}
+
+.basicGreen div{
+	text-align: left;
+	background-color:#1c4941;
+	padding: 1%;
+	margin: 1%;
+	border-radius: 20px;
+	display: table;
+	width: 90%;
+}
+
+.subGreenLeft{
+	text-align: left;
+	font-size: 30px;
+	float:left;
+}
+
+.subGreenLeft textarea{
+	font: 12px;
+	width:80%;
+}
+
+.subGreenRight{
+	text-align: right;
+	float: right;
+	display:table-cell;
+}
+.subGreenRightCircle{
+	width: 5%;
+	height: 5%;
+	float: right;
+	/*position: absolute;*/
+}
