@@ -1,0 +1,45 @@
+header{
+	width:100%;
+	padding:1%;
+	background-color:#396140;
+	border-bottom-style: solid;
+	border-top-style: solid;
+	border-width:5px;
+	position: fixed;
+}
+.upper_header{
+	width: 100%;
+	background-color:#396140;
+	padding:1%;
+	border-bottom-style: solid;
+}
+
+.upper_header a{
+	border-right-style: solid;
+	height: inherit;
+}
+
+.lower_header{
+	width: 100%;
+	display: inline-block;
+}
+
+.greenburger{
+	background-image: url(hamburger-pin.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width:5%;	
+	height: 5%;
+}
+
+body{
+	background-color:#d9f5cd;
+}
+
+.banner{
+	background-image: url(25829.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+}

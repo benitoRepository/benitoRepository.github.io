@@ -1,84 +1,22 @@
-<!doctype html>
 <html>
 	<head>
-	<link rel="stylesheet" media="screen" href="weed.css">
-	<title>Weed</title>
+		<link rel="stylesheet" media="screen" href="cannareach.css">
+		<title>Title</title>
+		<script type="text/javascript" src="utilities.js"></script>
 	</head>
-	<header class="main">
+	<header id="cannareach_header" onmouseenter="opacity_filp_header()" onmouseleave="opacity_filp_header()">
+		<div class="upper_header" onmouseenter="opacity_filp_header()" onmouseleave="opacity_filp_header()">
+			<a onmouseleave="opacity_filp_header()">Offices</a>
+			<a onmouseleave="opacity_filp_header()">Media Center</a>
+			<a onmouseleave="opacity_filp_header()">Subscribe</a>
+			<a onmouseleave="opacity_filp_header()">Contact</a>
+		</div>
+		<div class="lower_header">
+			<div class="greenburger"></div>
+		</div>
 	</header>
 	<body>
-		<script type="text/javascript" src="weed.js"></script>
-		<img class="banner" src="25829.jpg"/>
-		<br>
-		<div class="basicGreen">
-			What field are you wondering about?
-			<div id="consumer-box" onclick="addTextBox_consumer()">
-				<div id="consumer-innner" class="subGreenLeft" onclick="addTextBox_consumer()">
-					Consumer
-				</div>
-				<div class="subGreenRight" onclick="addTextBox_consumer()">
-					<img id="consumer-pin" class="subGreenRightCircle" src="circle-pinner.png"/>
-				</div>
-			</div>
-			<script>
-					function addTextBox_consumer(){
-						//this function allows a text box to be inserted into the HTML
-						//by passing the id as a string argument in the HTML attribute of 'onclick'
-						//unfortunetly it had to be changed from its orignal script to be included
-						//in the html due to 'innerHTML' being null
-						if(document.getElementById("consumer_textbox")===null){
-							//the box should expand slowly, so set rows to 0 and animate to 5
-							document.getElementById("consumer-innner").innerHTML = "Consumer<br>";
-							let consumer_textbox = document.createElement("textarea");
-							consumer_textbox.setAttribute("rows", "0");
-							consumer_textbox.setAttribute("cols", "60");
-							consumer_textbox.setAttribute("placeholder", "Enter text");
-							consumer_textbox.setAttribute("id", "consumer_textbox");
-							consumer_textbox.style.opacity="0.0";
-							document.getElementById("consumer-innner").appendChild(consumer_textbox);
-							var n = 0.0;
-							var rows_built = 0;
-							setInterval(function () {
-								if(n>=1.0){
-									clearInterval();
-								}else{
-									n += 0.01;
-									if(rows_built != 7){
-										rows_built++;
-										consumer_textbox.setAttribute("rows", rows_built);
-									}
-									consumer_textbox.style.opacity=n;
-								}
-							}, 10);
-						}
-						//document.getElementById("consumer-innner").innerHTML = "Consumer <textarea rows=\"5\" cols=\"60\" name=\"text\" placeholder=\"Enter text\"></textarea>";
-					}
-			</script>
-			<div id="industry-box">
-				<div class="subGreenLeft">
-					Business
-				</div>
-				<div class="subGreenRight">
-					<img id="business-pin" class="subGreenRightCircle" src="circle-pinner.png"/>
-				</div>
-			</div>
-			<div id="industry-box2">
-				<div class="subGreenLeft">
-					Legal
-				</div>
-				<div class="subGreenRight">
-					<img id="legal-pin" class="subGreenRightCircle" src="circle-pinner.png"/>
-				</div>
-			</div>
-			<div id="industry-box3">
-				<div class="subGreenLeft">
-					Connections
-				</div>
-				<div class="subGreenRight">
-					<img id="connections-pin" class="subGreenRightCircle" src="circle-pinner.png"/>
-				</div>
-			</div>
+		<div class="banner">
 		</div>
-		
 	</body>
 </html>
