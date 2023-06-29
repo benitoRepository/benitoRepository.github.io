@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+@font-face {
+    font-family: METAG;
+    src: url(METAG___.TTF);
+}
+
+header{
+    overflow: hidden;
+    font-family: Kanit;
+    width:100%;
+    padding:0%;
+    margin:0%;
+    background-color:rgba(207,226,243, 0.5);
+    border-bottom-style: solid;
+    border-top-style: solid;
+    border-color:#3D85C6;
+    border-width:5px;
+    position: fixed;
+    opacity: 1.0;
+    transition: background-color 1.0s ease;
+    z-index: 2;
+    text-align: left;
+    /*transition: opacity .5s ease-in-out;*/
+}
+
+body{
+    background-image: url(wave_bg.png);
+    text-align: center;
+}
+
+#blue-header{
+    font-size: 5.0em;
+    padding-top: 8%;
+    /*background-color:#3d85c6;*/
+    color:rgba(255, 255, 255);
+}
+#blue-header pre{
+    font-family: METAG;
+}
+
+.upper_header{
+    padding-left: 2%;
+    display: inline;
+}
+
+.upper_header a{
+    border-radius: 20px;
+    padding-left:2%;
+    padding-right:2%;
+    font-size: 1.2em;
+    text-decoration: none;
+    opacity: 1.0;
+    background-image: url(button44x180blue.png);
+    color:rgba(255, 255, 255);
+}
+
+#inner-header{
+    /*display:inline-block;*/
+    overflow: visible;
+    padding-top:1%;
+    padding-bottom:1%;
+}
+
+#burger-menu{
+    float: right;
+    margin-bottom: 1%;
+    margin-right: 5%;
+    font-size: 2.5em;
+    border-radius: 50%;
+    color:rgba(255, 255, 255);
+    background-image: url(button44x44blue.png);
+    background-size: contain;
+    align-items: center;
+    justify-content: center;
+    padding-left:1%;
+    padding-right:1%;
+}
+
