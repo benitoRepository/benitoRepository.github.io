@@ -18,7 +18,8 @@ header{
     transition: background-color 1.0s ease;
     z-index: 2;
     text-align: left;
-    right: 0.0em
+    right: 0.0em;
+    top: 2%;
     /*transition: opacity .5s ease-in-out;*/
 }
 
@@ -26,11 +27,13 @@ body{
     background-image: url(wave_bg.png);
     text-align: center;
     font-family: Kanit;
+    color:rgba(255, 255, 255);
+    align-items: center;
 }
 
 #blue-header{
     font-size: 5.0em;
-    padding-top: 8%;
+    padding-top: 5%;
     /*background-color:#3d85c6;*/
     color:rgba(255, 255, 255);
 }
@@ -80,5 +83,115 @@ body{
     opacity: 0.0;
     transition: opacity 3s ease-in-out;
     font-size: 2.5em;
-    color:rgba(255, 255, 255);
 }
+
+#outer_shell{
+    border-color:rgba(255, 255, 255);
+    border-width:5px;
+    margin-top: 10%;
+    border-style: solid;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+.wide{
+    width: 100%;
+}
+
+.heightSpace50{
+    height: 50%;
+}
+
+.heightSpace15{
+    height: 15%;
+}
+
+.heightSpace30{
+    height: 30%;
+}
+
+.heightSpace2{
+    height: 2%;
+    border-color: rgba(0,0,0, 0);
+    background-image: none;
+}
+
+#curtain_panels .heightSpace2{
+    height: 2%;
+    border-color: rgba(0,0,0, 0);
+    background-image: none;
+}
+
+#curtain_panels .heightSpace2:hover{
+    border-color: rgba(0,0,0, 0);
+}
+
+#curtainBox{
+    display: flex;
+    justify-content: space-around;
+    height: 80vh;
+    width: 100vw;
+    background: #b7c7f7 url('assets/image1.jpeg') right/contain no-repeat;
+    position: relative;
+    margin: auto;
+}
+
+.curtain-column{
+    flex: 1;
+    background-color:#1b20ab;
+    transition: opacity .25s ease-in-out, background-color .25s ease-in-out;
+    z-index: 1;
+}
+
+#bannerBox{
+    z-index: 0;
+    position: absolute;
+    top:10vh;
+    left:6vw;
+    right:0;
+    bottom:0;
+    height:50vh;
+    width:50vw;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 5em;
+    border-radius: 20px;
+    border-style: solid;
+    background: url(button44x180blue.png) center/cover no-repeat;
+    border-color: rgba(207,226,243, 0.5);
+    transition: opacity .5s ease-in-out;
+    opacity: 0;
+}
+
+#curtain_panels{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#curtain_panels div{
+    flex: 1;
+    background: url(button44x180blue.png) center/cover no-repeat;
+    font-size: 2em;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: rgba(207,226,243, 0.5);
+}
+
+#curtain_panels div:hover{
+    border-color: whitesmoke;
+}
+
+#curtain_panels #p1{
+}
+
+#curtain_panels .bar{
+    margin: auto;
+    height: 2vh;
+    width: 1vw;
+    background-color: whitesmoke;
+    border-color: rgba(0,0,0, 0);
+    background-image: none;
+}
+
