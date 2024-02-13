@@ -147,11 +147,11 @@ body{
 #bannerBox{
     z-index: 0;
     position: absolute;
-    top:10vh;
+    top:6vh;
     left:6vw;
     right:0;
     bottom:0;
-    height:50vh;
+    /*height:50vh;*/
     width:50vw;
     justify-content: center;
     align-items: center;
